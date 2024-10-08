@@ -16,11 +16,23 @@
             pulaLinha()
         }
 
+        function calculaIMC(altura, peso){
+        return imc = peso / (altura * altura)
+        }
+
         let pesoAdriel = 51
         let alturaAdriel = 1.75
 
-        let imcAdriel = pesoAdriel / (alturaAdriel * alturaAdriel)
-        mostrar(imcAdriel)
+        let pesoClaudia = 68
+        let alturaClaudia = 1.70
+
+        let nome = prompt('Qual é o seu nome?')
+        let alturaInformada = prompt(`${nome} você poderia me informar sua altura? (Use ponto e não vírgula para informar)`)
+        let pesoInformado = prompt(`${nome} você poderia me informar seu peso?`)
+
+        mostrar(`O IMC de ${nome} é: ${calculaIMC(alturaInformada, pesoInformado)}`)
+
+        //mostrar(`O imc do Adriel é: ${calculaIMC(1.75, 51)}`)
     </script>
 </body>
 </html>
