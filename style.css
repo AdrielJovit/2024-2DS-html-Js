@@ -13,6 +13,7 @@
     --cor-fonte1: #edf6f9ff;
     --cor-fundo: #ffddd2ff;
     --cor-5: #e29578ff;
+    --cor-6: rgb(185, 124, 100);
     --cor-fonte2: #000000;
 }
 
@@ -21,7 +22,7 @@ body{
     font-family: var(--fonte-texto);
 }
 
-header{
+header, footer{
     background-color: var(--cor-cabecalho);
     text-align: center;
     padding: 2em;
@@ -36,4 +37,31 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao{
+    text-align: center;
+    background-color: var(--cor-5);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--cor-fonte2);
+    padding: 1em 0;
+    border-radius: 15px;
+}
+
+.cartao:hover{
+    background-color: var(--cor-6);
+    transition: 0.5s;
+}
+
+.cartao a{
+    text-decoration: none;
+    color: var(--cor-cabecalho);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-5);
 }
