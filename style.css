@@ -61,7 +61,41 @@ header h1{
     color: var(--cor-cabecalho);
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 footer a{
     text-decoration: none;
     color: var(--cor-5);
+}
+
+.principal-numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.numero-input{
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.numero-botao{
+    margin-left: 1em;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color: var(--cor-5);
+    color: var(--cor-fonte2);
+    border-radius: 15px;
+    border: none;
+    font-family: var(--fonte-texto);
+}
+
+.numero-botao:hover{
+    background-color: var(--cor-6);
+    transition: 1s;
 }
