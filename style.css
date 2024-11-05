@@ -61,6 +61,10 @@ header h1{
     color: var(--cor-cabecalho);
 }
 
+.ultimo-cartao{
+    margin-bottom: 5em;
+}
+
 footer{
     position: fixed;
     bottom: 0;
